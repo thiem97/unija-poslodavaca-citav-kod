@@ -1,0 +1,92 @@
+@mixin carousel-styles($width, $background, $height, $backgroundOnHover) {
+  width: $width;
+  background: $background;
+  height: $height;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background-color: $backgroundOnHover;
+  }
+}
+
+@mixin carousel_icon-style__hover() {
+  color: white;
+}
+
+@mixin navbar_links {
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  color: rgba(34, 83, 166, 1);
+}
+
+.owl-carousel.owl-carousel__second .owl-prev,
+.owl-carousel.owl-carousel__second .owl-next {
+  @include carousel-styles(
+    83px,
+    rgba(148, 196, 249, 1) !important,
+    79px,
+    rgba(0, 40, 108, 1) !important
+  );
+  &:hover i {
+    @include carousel_icon-style__hover;
+  }
+}
+
+.owl-carousel.owl-carousel__third .owl-prev,
+.owl-carousel.owl-carousel__third .owl-next {
+  @include carousel-styles(
+    98px,
+    white !important,
+    93px,
+    rgba(148, 196, 249, 1) !important
+  );
+  border: 2px solid #94c4f9 !important;
+  &:hover i {
+    @include carousel_icon-style__hover;
+  }
+}
+
+#footer__section {
+  ul > li {
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    font-style: normal;
+    // margin-bottom: 23px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #footer__section {
+    ul > li {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+nav {
+  .first_list > li a {
+    @include navbar_links();
+    font-weight: 500;
+    // padding-left: 40px;
+  }
+
+  ul li:nth-child(3) a {
+    @include navbar_links();
+    font-weight: 700;
+    i {
+      width: 16px;
+      height: 8px;
+      // margin-left: 10px;
+    }
+  }
+
+  .second_list li a {
+    @include navbar_links();
+    font-weight: 700;
+    padding-right: 20px;
+  }
+}

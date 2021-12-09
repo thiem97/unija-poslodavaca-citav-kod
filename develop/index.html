@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./carousel/owl.carousel.css">
+    <link rel="stylesheet" href="./carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./main.scss">
+    <script defer src="./carousel/owl.carousel.js"></script>
+    <script defer src="./js/app.js"></script>
+    <title>Index</title>
+</head>
+
+<body class="bg-[#fff] text-black font-poppins relative">
+    <header id="header" class="">
+        <nav
+            class="flex flex-row justify-between  h-[129px] lg:justify-start items-center xl:mx-0 xl:max-w-full xl:justify-center lg:max-w-[900px] max-w-[500px] md:max-w-[700px] mx-[25px] sm:mx-auto">
+            <div class="lg:mr-[100px]">
+                <img loading="lazy" src="assets/images/logo-unija-poslodavaca.png" alt="union"
+                    class="block lg:hidden pb-[37px] pt-[37px]">
+                <img src="./assets/images/logo.svg" class="hidden xl:block" alt="logo" loading="lazy">
+            </div>
+            <div class="flex-wrap hidden lg:flex-col xl:flex-row lg:pt-5 lg:flex lg:justify-between xl:space-x-36">
+                <ul class="flex  first_list xl:space-x-[40px] lg:space-x-[20px]">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="about.html">O nama</a></li>
+                    <li><a href="#">Članstvo <i class="fas fa-chevron-up"></i></a></li>
+                    <li><a href="#">Zastupništvo</a></li>
+                    <li><a href="#">Covid 19</a></li>
+                    <li><a href="#">Aktuelnosti</a></li>
+                </ul>
+                <ul class="flex second_list lg:self-center">
+                    <li><a href="#" class="underline !mr-0">Mne</a></li>
+                    <li><a href="#">Eng</a></li>
+                </ul>
+            </div>
+            <div class="self-center block cursor-pointer lg:hidden hamburger">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+            </div>
+
+
+
+        </nav>
+
+        <!-- mobile menu -->
+        <div class="fixed top-0 right-0 z-50 block w-full h-full bg-white lg:hidden navbar">
+            <div class="absolute cursor-pointer right-10 top-10 close ">
+                <i class="fas fa-times fa-3x"></i>
+            </div>
+            <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl font-medium text-blue7">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="#">Članstvo <i class="fas fa-chevron-up"></i></a></li>
+                <li><a href="#">Zastupništvo</a></li>
+                <li><a href="#">Covid 19</a></li>
+                <li><a href="#">Aktuelnosti</a></li>
+                <li><a href="#" class="text-black underline">Mne</a></li>
+                <li><a href="#" class="text-black">Eng</a></li>
+            </ul>
+        </div>
+
+        <section id='report' class=" bg-blue 2xl:bg-white mt-2 pt-[64px] 2xl:pt-0 relative overflow-hidden">
+            <div
+                class="sm:flex sm:items-center sm:flex-col sm:justify-center md:max-w-[700px] lg:max-w-[900px]
+                2xl:max-w-[1568px] 2xl:mx-0 xl:max-w-[1300px] overflow-hidden 2xl:overflow-visible mx-auto bg-blue  md:mx-auto lg:flex lg:flex-row lg:justify-between xl: justify-center lg:gap-20 xl:gap-0  lg:mx-auto 2xl:grid 2xl:grid-cols-2 2xl:h-[862px] 2xl:place-items-center">
+                <div class="sm:mx-auto mx-[25px] xl:mx-0 2xl:mx-0  text-[75px] font-bold text-white
+                                    leading-[113px]
+                                tracking-normal 2xl:text-[125px] xl:text-8xl xl:leading-[188px] xl:flex xl:flex-col h-full
+                                2xl:justify-between 2xl:pl-[55%]">
+                    <div class="2xl:pt-[209px] ">
+                        <h2 class="text-blue text-stroke__custom 2xl:text-[133px] animate-slide_left">Godišnji</h2>
+                        <h2 class="-mt-10 xl:-mt-10 animate-slide_left"> Izvještaj </h2>
+                    </div>
+                    <p
+                        class="-mt-5 xl:mt-0 2xl:mb-[-20px] text-[60px] 2xl:text-[150px] xl:leading-[176px] font-workSans animate-slide_left text-gray2">
+                        2020/21</p>
+                
+                    <div
+                        class="flex items-center cursor-pointer justify-between mt-[25px] lg:mt-0 bg-blue2 max-w-[360px] sm:w-full h-[75px] xl:hidden">
+                        <p class="pl-[49px] underline text-xl text-white__custom">Još info</p>
+                        <img class=" pr-[62px]" src="./assets/images/right_arrow.png" alt="right arrow" loading='lazy'>
+                    </div>
+                </div>
+
+                <!-- SLIDER -->
+                <div class="2xl:!w-[862px] 2xl!h-[729px]  owl-carousel owl-carousel__first 2xl:ml-36 animate-slide_right">
+                    <div class="item carousel__item" data-dot="<button class='first_btn'>01</button>">
+                        <div class="block xl:hidden">
+                            <img src="./assets//images/showcase.png" class="" loading="lazy" alt="showcase">
+                        </div>
+                        <div class="hidden xl:block">
+                            <img src="./assets/images/man_and_women.png" class="" loading="lazy" alt="man and women">
+                        </div>
+                    </div>
+                    <div class="carousel__item item" data-dot="<button>02</button>">
+                        <div class="block xl:hidden">
+                            <img src="./assets//images/president.png" class="" loading="lazy" alt="showcase">
+
+                        </div>
+                        <div class="hidden xl:block">
+                            <img src="./assets/images/man_and_women.png" class="" loading="lazy" alt="man and women">
+                        </div>
+                    </div>
+                    <div class="carousel__item item" data-dot="<button>03</button>">
+                        <div class="block xl:hidden">
+                            <img src="./assets//images/showcase.png" class="xl:hidden" loading="lazy" alt="showcase">
+
+                        </div>
+                        <div class="hidden xl:block">
+                            <img src="./assets/images/man_and_women.png" class="" loading="lazy" alt="man and women">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="absolute top-[126px] xl:top-0 xl:left-0 left-[19px]">
+                <img src="./assets//images/path32.png" class="block opacity-20 xl:hidden" alt="path1" loading="lazy">
+                <img src="./assets//images/curve__large.png" class="hidden opacity-20 xl:block" alt="path1"
+                    loading="lazy">
+            </div>
+
+            <div class="absolute xl:top-0 xl:left-[21.25vw] top-[126px] left-[147px]">
+                <img src="./assets//images/path54.png" class="block opacity-20 xl:hidden" alt="path2" loading="lazy">
+                <img src="./assets//images/curve2__large.png" class="hidden opacity-20 xl:block" alt="path1" />
+            </div>
+            <div class="absolute top-[127px] xl:top-0 right-[19px] xl:right-[35.42vw]">
+                <img src="./assets//images/path74.png" class="block opacity-20 xl:hidden" alt="path3" loading="lazy">
+                <img src="./assets//images/curve3__large.png" class="hidden opacity-20 xl:block" alt="path3"
+                    loading="lazy">
+            </div>
+        </section>
+    </header>
+
+    <section id="president" class="bg-blue3 pb-[144px] xl:pb-0 pt-[96px] xl:pt-[130px]  relative overflow-hidden">
+        <div class="max-w-[370px] sm:max-w-[500px]
+            lg:max-w-[900px] sm:mx-auto mx-[25px] md:max-w-[700px]  sm:flex sm:flex-col sm:justify-center
+            sm:items-center xl:items-start xl:max-w-full xl:mx-auto">
+            <h2 class=" main-section__heading  pr-[38px] xl:pr-0 mb-[54px]  xl:hidden" data-aos="fade-left">Riječ našeg
+                <span class="!text-blue6">predsjednika</span>
+            </h2>
+            <div class="items-center xl:justify-between xl:flex xl:gap-[63px] ">
+                <div class="z-50">
+                    <img src="./assets/images/president__small-screen.png" alt="president"
+                        class="max-w-[159px] rounded-full h-full xl:hidden block" />
+
+
+                    <img src="./assets/images/president.png" data-aos="fade-up
+" class="hidden object-cover xl:block" alt="president big">
+                </div>
+                <div class="z-50 xl:self-center xl:mt-20 2xl:mt-0">
+                    <h2 class=" main-section__heading  pr-[38px] mb-[54px] xl:max-w-full hidden xl:!block"
+                        data-aos="fade-left"><span class="underline ">Riječ</span> našeg
+                        <span class="!text-blue6">predsjednika</span>
+                    </h2>
+                    <div
+                        class="bg-white xl:bg-transparent max-w-[500px] lg:max-w-[900px] md:max-w-[700px] xl:mt-0 -mt-10 pl-[16px] xl:pl-0 xl:max-w-[733px]">
+
+                        <p class="pt-[84px] xl:pt-[0px] pb-[30px] pr-[19px] xl:text-[22px] xl:pr-0 xl:font-normal xl:leading-[40px] font-medium leading-[32px] text-sm text-black__custom"
+                            data-aos="fade-left">
+                            “Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                            Unapređujemo
+                            uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. i odgovornu
+                            poslovnu
+                            praksu. Unapređujemo uslove poslovanja, ” </p>
+                        <div class="pb-[26px] leading-[32px] text-[18px] text-blue xl:hidden block"
+                            data-aos="fade-right">
+                            <p class="font-bold ">Predrag Mitrović,</p>
+                            <p>predsjednik UPCG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute xl:top-0 xl:left-0 xl:max-h-full">
+            <img src="./assets//images/path-president-1.png" class="hidden xl:block " alt="path1" loading="lazy">
+        </div>
+
+        <div class="absolute xl:top-0 xl:left-[22.2vw]">
+            <img src="./assets//images/path-president-2.png" class="hidden xl:block" alt="path1" />
+        </div>
+        <div class="absolute xl:top-0 xl:left-[46vw] xl:transform">
+            <img src="./assets//images/path-president3.png" class="hidden xl:block" alt="path3" loading="lazy">
+        </div>
+    </section>
+
+
+
+    <section id="info"
+        class="relative pb-[126px] xl:pb-[167px] max-w-[550px] xl:w-full xl:max-w-full mt-5 bg-europeBg xl:bg-right xl:bg-contain bg-contain bg-no-repeat bg-left-top xl:mx-auto sm:mx-auto ml-[25px]  xl:m-0 lg:max-w-[900px] mr-auto md:max-w-[700px]">
+        <h2 class="main-section__heading  pt-[98px] xl:text-center" data-aos="fade-up">Podaci o <span
+                class="underline text-blue6">Covid
+                19</span></h2>
+
+        <div class="xl:pt-[62px] grid gap-[82px]  xl:flex xl:items-center xl:justify-center xl:gap-[141px] xl:place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+            sm:gap-[50px] md:place-items-center">
+            <div class="" data-aos="fade-in">
+                <h2 class="business_heading">> <span class="tracking-normal count">40</span> %</h2>
+                <p class="block business_paragraph xl:hidden">Poslovni uspjeh i cilj</p>
+                <p class="hidden business_paragraph xl:block">kompanija u Crnoj Gori je prekinulo sa radom
+                </p>
+            </div>
+
+            <div class="" data-aos="fade-in">
+                <h2 class="business_heading">> <span class="tracking-normal count">35</span> %</h2>
+                <p class="block business_paragraph xl:hidden">Poslovni uspjeh i cilj</p>
+                <p class="hidden business_paragraph xl:block">kompanija u Crnoj Gori je prekinulo sa radom
+                </p>
+            </div>
+            <div class="" data-aos="fade-in">
+                <h2 class="business_heading">> <span class="tracking-normal count">23</span> %</h2>
+                <p class="block business_paragraph xl:hidden">Poslovni uspjeh i cilj</p>
+                <p class="hidden business_paragraph xl:block">kompanija u Crnoj Gori je prekinulo sa radom
+                </p>
+            </div>
+            <div class="" data-aos="fade-in">
+                <h2 class="business_heading">> <span class="tracking-normal count">13</span> %</h2>
+                <p class="block business_paragraph xl:hidden">Poslovni uspjeh i cilj</p>
+                <p class="hidden business_paragraph xl:block">kompanija u Crnoj Gori je prekinulo sa radom
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="investiments" class="workers__bg h-[558px] lg:h-[807px]">
+        <div class="flex items-center justify-center pt-[76px] xl:pt-[193px]">
+            <img src="./assets/images/arrow.png" class="mr-[20px]" alt="arrow" data-aos="fade-right">
+            <h2 class="text-white font-bold text-[90px] leading-[135px]" data-aos="fade-left"><span
+                    class="count">90</span>%
+            </h2>
+        </div>
+        <p class="mt-[32px] text-center block xl:hidden text-white leading-[30px] font-normal text-xl max-w-[319px] mx-auto"
+            data-aos="fade-up">
+            Eura
+            investicija u periodu od 1. Jula do 4. Septembra</p>
+
+        <p class="text-center text-white text-[30px] leading-[45px] font-bold xl:max-w-[916px] mx-auto hidden xl:block"
+            data-aos="fade-up">
+            Preduzeća prijavilo je pad prihoda u odnosu na isti period prošle godine. Prosječni pad prihoda za sva
+            anketirana
+            preduzeća iznosio je <span class="underline"><span class="count">47</span>%.</span></p>
+    </section>
+
+
+    <section class="bg-blue3 lg:bg-transparent pb-[84px]" id="operations">
+        <div
+            class="max-w-[378px] sm:max-w-[500px] md:max-w-[700px] xl:max-w-full 2xl:ml-48 lg:max-w-[900px] xl:items-start  lg:h-full mx-auto -mt-40 xl:flex xl:justify-center">
+            <div class=" owl-carousel owl-carousel__second h-[348px] bg-blue  xl:max-w-[449px] xl:min-h-[708px]"
+                data-aos="fade-up">
+                <div class="item ">
+                    <h2
+                        class="pl-[32px] xl:pl-[68px] pt-[43px] pb-[35px] xl:pb-0 xl:pt-[127px] font-bold text-[25px] xl:text-[50px] xl:leading-[75px] leading-[37.5px] text-white">
+                        Operativni <span class="underline text-blue6 xl:no-underline">status</span></h2>
+                    <p
+                        class="pr-[23px] pl-[32px] xl:pl-[68px] xl:pr-[81px] font-medium text-sm	text-white leading-[28px] xl:leading-[32px] xl:text-[20px]">
+                        Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Naši
+                        članovi su preduzetnici,
+                        mala i srednja preduzeća, veliki privredni sistemi i udruženja</p>
+                    <p class="text-[200px] -mt-4 hidden xl:block font-bold leading-[300px] text-[#FAFAFA29]">01</p>
+
+                </div>
+                <div class="item ">
+                    <h2 class="pl-[32px] xl:pl-[68px] pt-[43px] pb-[35px] xl:pb-0 xl:pt-[127px] font-bold text-[25px]
+                        xl:text-[50px] xl:leading-[75px] leading-[37.5px] text-white">
+                        Operativni <span class="underline text-blue6 xl:no-underline">status 2</span></h2>
+                    <p
+                        class="pr-[23px] pl-[32px] xl:pl-[68px] xl:pr-[81px] font-medium text-sm	text-white leading-[28px] xl:leading-[32px] xl:text-[20px]">
+                        Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Naši
+                        članovi su
+                        preduzetnici,
+                        mala i srednja preduzeća, veliki privredni sistemi i udruženja</p>
+                    <p class="text-[200px] -mt-4 hidden xl:block font-bold leading-[300px] text-[#FAFAFA29]">02</p>
+
+                </div>
+                <div class="item ">
+                    <h2 class="pl-[32px] xl:pl-[68px] pt-[43px] pb-[35px] xl:pb-0 xl:pt-[127px] font-bold text-[25px]
+                        xl:text-[50px] xl:leading-[75px] leading-[37.5px] text-white">
+                        Operativni <span class="underline text-blue6 xl:no-underline">status 3</span></h2>
+                    <p
+                        class="pr-[23px] pl-[32px] xl:pl-[68px] xl:pr-[81px] font-medium text-sm	text-white leading-[28px] xl:leading-[32px] xl:text-[20px]">
+                        Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Naši
+                        članovi su
+                        preduzetnici,
+                        mala i srednja preduzeća, veliki privredni sistemi i udruženja</p>
+                    <p class="text-[200px] -mt-4 hidden xl:block font-bold leading-[300px] text-[#FAFAFA29]">03</p>
+
+                </div>
+            </div>
+            <article
+                class=" pt-[55px] xl:pt-[100px] xl:pb-[99px] pb-[37px]  bg-white grid  gap-[24px] shadow-xl xl:order-first"
+                data-aos="fade-down">
+                <div
+                    class="md:max-w-[700px]  xl:max-w-[766px] xl:px-[80px]  xl:grid-cols-2  max-w-[370px] sm:max-w-[500px] !sm:mx-auto mr-auto ml-8 lg:grid lg:mx-auto lg:grid-cols-3 lg:gap-[40px] xl:gap-x-[76px] xl:gap-y-[30px] lg:place-items-center">
+                    <div class="">
+                        <h2 class="succession_heading"><span class="count">53</span> %</h2>
+                        <div class="max-w-[283px] xl:max-w-[265px] h-1 bg-blue6">
+                            <div class="w-3/6 xl:w-[96px] h-full
+                             bg-blue4"></div>
+                        </div>
+                        <h3 class="succession_subheading !text-left">Poslovni uspjeh</h3>
+                        <p class="pr-[23px]">
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                        </p>
+                    </div>
+                    <div class="">
+                        <h2 class="mt-0 succession_heading"><span class="count">13</span> %</h2>
+                        <div class="max-w-[283px] xl:max-w-[265px] h-1 bg-blue6">
+                            <div class="w-3/6 h-full xl:w-[96px] bg-blue4"></div>
+                        </div>
+                        <h3 class="succession_subheading !text-left">Poslovni uspjeh</h3>
+                        <p class="pr-[23px]">
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                        </p>
+                    </div>
+                    <div class="">
+                        <h2 class="succession_heading "><span class="count">44</span> %</h2>
+                        <div class="max-w-[283px] h-1 xl:max-w-[265px] bg-blue6">
+                            <div class="w-3/6 xl:w-[96px] h-full bg-blue4"></div>
+                        </div>
+                        <h3 class="succession_subheading !text-left">Poslovni uspjeh</h3>
+                        <p class="pr-[23px]">
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                        </p>
+                    </div>
+                    <div class="">
+                        <h2 class="succession_heading "><span class="count">28</span> %</h2>
+                        <div class="max-w-[283px] h-1 xl:max-w-[265px] bg-blue6">
+                            <div class="w-3/6 xl:w-[96px] h-full bg-blue4"></div>
+                        </div>
+                        <h3 class="succession_subheading !text-left">Poslovni uspjeh</h3>
+                        <p class="pr-[23px]">
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="achieved_section">
+        <article
+            class="md:max-w-[700px] pt-3 xl:pt-32 lg:max-w-[900px] max-w-[500px] mx-[25px] xl:w-full xl:max-w-full xl:mx-auto sm:mx-auto">
+            <h2 class=" mb-[36px] xl:mb-[99px] main-section__heading pr-[71px] sm:pr-0 md:text-center xl:text-justify xl:ml-[19%]"
+                data-aos="fade-down">
+                Šta smo postigli u <span class="border-b-2 border-blue6 text-blue6">Covid 19</span><span
+                    class="border-b-2 border-blue4">
+                    periodu</span></h2>
+
+            <div class=" owl-carousel owl-carousel__third">
+                <div class=" item xl:w-[565px] mx-auto">
+                    <div class="max-w-[378px]  md:max-w-[700px] lg:max-w-[900px] mx-auto sm:max-w-[200px]">
+                        <img src="./assets/images/achieved__large.png" alt="achieved" class=" lg:w-full xl:h-[402px]"
+                            loading="lazy">
+                    </div>
+                    <h3 class="succession_subheading text-blue4 !mt-[35px] !mb-[29px]">Pomoć privrednicima</h3>
+                    <p class="carousel_style__third">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i
+                        odgovornu
+                        poslovnu praksu. Naši članovi su preduzetnici, mala i srednja preduzeća, veliki privredni
+                        sistemi i
+                        udruženja. Poslovnu praksu. Naši članovi su preduzetnici, mala i srednja preduzeća, veliki
+                        privredni
+                        sistemi i udruženja. Poslovnu praksu. </p>
+                </div>
+                <div class=" item  xl:w-[565px] mx-auto">
+                    <div class="max-w-[378px]  md:max-w-[700px] lg:max-w-[900px] mx-auto sm:max-w-[px]">
+                        <img src="./assets/images/medicine.png" alt="achieved" class=" lg:w-full xl:h-[402px]"
+                            loading="lazy">
+                    </div>
+                    <h3 class="succession_subheading text-blue4 !mt-[35px] !mb-[29px]">Donacija medicinskih šlemova</h3>
+                    <p class="carousel_style__third">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i
+                        odgovornu poslovnu praksu. Naši članovi su preduzetnici,
+                        mala i srednja preduzeća, veliki privredni sistemi i udruženja. Poslovnu praksu. Naši članovi su
+                        preduzetnici, mala i
+                        srednja preduzeća, veliki privredni sistemi i udruženja. Poslovnu praksu. </p>
+                </div>
+                <div class=" xl:w-[565px] mx-auto">
+                    <div class="max-w-[378px]  md:max-w-[700px] lg:max-w-[900px] mx-auto sm:max-w-[px]">
+                        <img src="./assets/images/volunteer.png" alt="achieved" class=" lg:w-full xl:h-[402px]"
+                            loading="lazy">
+                    </div>
+                    <h3 class="succession_subheading text-blue4 !mt-[35px] !mb-[29px]">Donacija bedževa kao vid podrške
+                    </h3>
+                    <p class="carousel_style__third">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i
+                        odgovornu poslovnu praksu. Naši članovi su preduzetnici,
+                        mala i srednja preduzeća, veliki privredni sistemi i udruženja. Poslovnu praksu. Naši članovi su
+                        preduzetnici, mala i
+                        srednja preduzeća, veliki privredni sistemi i udruženja. Poslovnu praksu. </p>
+                </div>
+            </div>
+        </article>
+
+        <div class="pt-[142px] pb-[96px]  xl:bg-blue__custom3">
+            <div class="lg:max-w-[900px] max-w-[550px] mx-[25px] md:max-w-[700px] xl:max-w-[1183px]  sm:mx-auto">
+                <h2 class=" main-section__heading sm:text-center pb-[86px]" data-aos="fade-right">Benefiti članstva
+                    <span class="underline text-blue6">u
+                        organizaciji</span>
+                </h2>
+
+                <div class=" grid gap-[27px] 2xl:gap-x-[115px] xl:grid-cols-3 ">
+                    <div class="bg-blue__custom pt-[36px] pb-[30px] flex flex-col justify-evenly xl:w-[405px] xl:h-[369px]"
+                        data-aos='fade-in' data-aos-delay="100">
+                        <div class="flex pl-6 xl:flex-col xl:pl-[49px]">
+                            <img src="./assets/images/tv-icon.svg" class="mr-[21px] xl:mr-0 w-8	xl:w-[55px]"
+                                alt="tv icon" loading="lazy">
+                            <h2 class="main-section__subheading">Izvanredna komunikacija</h2>
+                        </div>
+                        <p class="pl-[18px] xl:pl-[49px] mt-[27px] benefit__paragraphs xl:mt-0">Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo
+                            i odgovornu poslovnu
+                            praksu. </p>
+                    </div>
+                    <div class=" pt-[36px] pb-[30px] flex flex-col justify-evenly
+                         xl:w-[405px] xl:h-[369px]" data-aos='fade-in' data-aos-delay="200">
+                        <div class="flex pl-6 xl:flex-col xl:pl-[49px]">
+                            <img src="./assets/images/success_icon.png" class="mr-[21px] w-8 xl:w-[55px]	" alt="tv icon"
+                                loading="lazy">
+                            <h2 class="main-section__subheading xl:w-32">Budite povezani</h2>
+                        </div>
+                        <p class="pl-[18px] xl:pl-[49px] mt-[27px] xl:mt-0 benefit__paragraphs">Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo
+                            i odgovornu poslovnu
+                            praksu. </p>
+                    </div>
+                    <div class="  pt-[36px] pb-[30px] flex flex-col justify-evenly xl:w-[405px] xl:h-[369px]
+                        " data-aos='fade-in' data-aos-delay="300">
+                        <div class="flex pl-6 xl:flex-col xl:pl-[49px]">
+                            <img src="./assets/images/analitics_icon.png"
+                                class="mr-[21px] w-8 xl:self-start	xl:w-[55px] self-center" alt="tv icon"
+                                loading="lazy">
+                            <h2 class="main-section__subheading">Informisanje o događajima</h2>
+                        </div>
+                        <p class="pl-[18px] xl:pl-[49px] mt-[27px] benefit__paragraphs xl:mt-0">Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo
+                            i odgovornu poslovnu
+                            praksu. </p>
+                    </div>
+                    <div class=" pt-[36px] pb-[30px] flex flex-col justify-evenly  xl:w-[405px] xl:h-[369px]
+                        " data-aos='fade-in' data-aos-delay="400">
+                        <div class="flex pl-6 xl:flex-col xl:pl-[49px]">
+                            <img src="./assets/images/tv-icon.svg" class="mr-[21px] w-8	xl:w-[55px]" alt="tv icon"
+                                loading="lazy">
+                            <h2 class="main-section__subheading">Tacnost i preciznost</h2>
+                        </div>
+                        <p class="pl-[18px] xl:pl-[49px] mt-[27px] benefit__paragraphs xl:mt-0">Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo
+                            i odgovornu poslovnu
+                            praksu. </p>
+                    </div>
+                    <div class=" pt-[36px] pb-[30px] flex flex-col justify-evenly xl:w-[405px] xl:h-[369px]
+                        " data-aos='fade-in' data-aos-delay="500">
+                        <div class="flex pl-6 xl:flex-col xl:pl-[49px]">
+                            <img src="./assets/images/success_icon.png"
+                                class="mr-[21px] w-8 self- xl:self-start	xl:w-[55px]" alt="tv icon" loading="lazy">
+                            <h2 class="main-section__subheading">Uspjesnije vodjenje poslova</h2>
+                        </div>
+                        <p class="pl-[18px] xl:pl-[49px] mt-[27px] benefit__paragraphs xl:mt-0">Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo
+                            i odgovornu poslovnu
+                            praksu. </p>
+                    </div>
+                    <div class=" pt-[36px] pb-[30px] flex flex-col justify-evenly xl:w-[405px] xl:h-[369px]
+                        " data-aos='fade-in' data-aos-delay="600">
+                        <div class="flex pl-6 xl:flex-col xl:pl-[49px]">
+                            <img src="./assets/images/analitics_icon.png"
+                                class="mr-[21px] w-8 xl:w-[55px] self-center xl:self-start" alt="tv icon"
+                                loading="lazy">
+                            <h2 class="main-section__subheading">Analitika i napredna
+                                statistika</h2>
+                        </div>
+                        <p class="pl-[18px] xl:pl-[49px] mt-[27px] benefit__paragraphs xl:mt-0">Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo
+                            i odgovornu poslovnu
+                            praksu. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="block bg-blue3 pb-[82px] xl:pb-0">
+        <div class="xl:flex">
+            <div class="order-last ">
+                <img src="./assets/images/people.png"
+                    class="max-w-[600px] sm:mx-auto lg:max-w-[900px] h-full w-full xl:hidden block" alt="people">
+                <img src="./assets/images/people-works.png" alt="people" class="hidden w-full xl:block"">
+            </div>
+            <div class=" xl:w-[1189px] xl:flex xl:flex-col xl:justify-center">
+                <div class=" max-w-[378px] sm:max-w-[500px] lg:max-w-[900px] md:max-w-[700px] xl:max-w-full sm:mx-auto ml-[25px]	
+                    mx-auto">
+                    <h2 class="main-section__heading pt-[82px]  block xl:hidden" data-aos="fade-right">O izvještaju
+                        aktivnosti za
+                        <span class="underline text-blue6">2021
+                            godinu<span></h2>
+
+                    <h2 class="main-section__heading pt-[82px] hidden xl:block xl:ml-64 2xl:ml-[22.313rem]"
+                        data-aos="fade-right">Šta je <span class="underline">unija
+                            postigla</span> u
+                        svom
+                        <span class=" text-blue6">
+                            dosadašnjem poslovanju?<span></h2>
+                    <div class="" data-aos="fade-right" data-aos-delay="300">
+                        <p class="text-gray3 text-[14px] mt-[55px] leading-[28px] 2xl:w-[681px] xl:font-medium
+                            xl:text-[18px] xl:leading-[35px] xl:ml-64 2xl:ml-[22.313rem]">
+                            Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo i odgovornu poslovnu
+                            praksu. Naši članovi su preduzetnici,
+                            mala i srednja preduzeća, veliki privredni sistemi i udruženja.Unapređujemo uslove
+                            poslovanja,
+                            promovišemo
+                            preduzetništvo i odgovornu poslovnu redni sistemi i udruženja.</p>
+                    </div>
+                </div>
+                <div class="max-w-[378px] sm:mx-auto justify-between flex mx-[25px] xl:mr-auto xl:w-[401px] items-center
+                    min-h-[62px] bg-blue mt-[54px] xl:ml-64 2xl:ml-[22.313rem]" data-aos="fade-right"
+                    data-aos-delay="600">
+                    <p class="pl-[42px] text-[18px] leading-[27px] font-medium tracking-[2px] text-white__custom">
+                        Preuzmi
+                        PDF
+                        izvještaj </p>
+                    <div class="self-center bg-blue5 w-[72px] h-[62px] flex items-center justify-center cursor-pointer">
+                        <img class="" src="./assets/images/download.png" loading="lazy" alt="download">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="xl:flex xl:w-full">
+        <section id="about__us" class="bg-blue__custom2 xl:w-1/2 xl:order-last">
+            <div class="flex max-w-[370px] sm:max-w-[550px] lg:max-w-[900px] md:max-w-[700px] sm:mx-auto xl:w-full xl:justify-center ml-[31px] mr-auto xl:h-[129px] h-[92px] items-center"
+                data-aos="fade-right">
+                <p class="text-[25px] xl:text-[35px] xl:leading-[52.5px] leading-[37.5px] font-bold text-blue4 ">O nama
+                </p>
+                <img class="ml-5 xl:ml-12" src="./assets/images/arrow.svg" alt="">
+            </div>
+        </section>
+
+        <section class=" bg-blue7 xl:w-1/2">
+            <div class="max-w-[370px] lg:max-w-[900px] xl:w-full xl:justify-center sm:max-w-[550px] sm:mx-auto ml-[27px] xl:h-[129px]
+                mr-auto md:max-w-[700px] h-[92px] flex items-center" data-aos="fade-up-right">
+                <p class="!m-0 xl:text-[35px] xl:leading-[52.5px] font-bold text-white succession_subheading">
+                    Kontaktirajte nas!</p>
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer__section" class="footer__bg">
+        <div
+            class="pt-[52px] pb-[96px] lg:max-w-[900px] sm:max-w-[550px] sm:mx-auto max-w-[370px] ml-[25px] mr-auto md:max-w-[700px] md:flex md:justify-between xl:max-w-full xl:justify-center xl:gap-[247px]  xl:h-[417px] xl:pt-[97px] xl:pb-[81px]">
+            <div class="">
+                <h2 class="text-white text-xl leading-[30px] font-bold mb-[30px] xl:text-[25px] xl:leading-[37.5px]">
+                    Godišnji izvještaj</h2>
+                <ul class="space-y-[23px] xl:space-y-[30px]">
+                    <li>Mjesečni izvještaj</li>
+                    <li>Kvartalni izvještaj</li>
+                    <li>Kvartalni izvještaj</li>
+                </ul>
+            </div>
+
+            <div class="mt-[75px] md:mt-0">
+                <h2 class="text-white text-xl leading-[30px] font-bold mb-[30px] xl:text-[25px] xl:leading-[37.5px]">
+                    Unija poslodavaca Crne Gore</h2>
+                <ul class="space-y-[11px]">
+                    <li>ul. Cetinjski put br. 36 (Zgrada Milić)</li>
+                    <li>81000 Podgorica</li>
+                    <li>Crna Gora</li>
+                    <li>Tel: + 382 (0)20 209 250</li>
+                    <li>Email: office@poslodavci.org </li>
+                </ul>
+            </div>
+
+            <div class="items-center hidden xl:flex xl:flex-col">
+                <img src="./assets/images/footer_logo.png" alt="logo" class="w-[88px] h-[74px] " loading="lazy">
+                <p class="font-medium text-[14px] leading-[21px] w-[201px] text-center mt-[31px] text-blue__custom4">
+                    Ovaj projekat
+                    je
+                    sproveden
+                    uz podšku ILO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+
+</body>
+
+</html>

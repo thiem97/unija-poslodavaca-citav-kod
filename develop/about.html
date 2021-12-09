@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./main.scss">
+    <script defer src="./carousel/owl.carousel.js"></script>
+    <script defer src="./js/app.js"></script>
+    <title>About</title>
+</head>
+<body class="bg-[#fff] text-black font-poppins relative sm:bg-red-500 md:bg-green-500 lg:bg-purple-500 xl:bg-yellow-500 2xl:bg-white">
+    <header id="about__header">
+        <nav
+            class="flex flex-row justify-between  h-[129px] lg:justify-start items-center xl:mx-0 xl:max-w-full xl:justify-center lg:max-w-[900px] max-w-[500px] md:max-w-[700px] mx-[25px] sm:mx-auto">
+            <div class="lg:mr-[100px]">
+                <img loading="lazy" src="assets/images/logo-unija-poslodavaca.png" alt="union"
+                    class="block lg:hidden pb-[37px] pt-[37px]">
+                <img src="./assets/images/logo.svg" class="hidden xl:block" alt="logo" loading="lazy">
+            </div>
+            <div class="flex-wrap hidden lg:flex-col xl:flex-row lg:pt-5 lg:flex lg:justify-between xl:space-x-36">
+                <ul class="flex  first_list xl:space-x-[40px] lg:space-x-[20px]">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="about.html">O nama</a></li>
+                    <li><a href="#">Članstvo <i class="fas fa-chevron-up"></i></a></li>
+                    <li><a href="#">Zastupništvo</a></li>
+                    <li><a href="#">Covid 19</a></li>
+                    <li><a href="#">Aktuelnosti</a></li>
+                </ul>
+                <ul class="flex second_list lg:self-center">
+                    <li><a href="#" class="underline !mr-0">Mne</a></li>
+                    <li><a href="#">Eng</a></li>
+                </ul>
+            </div>
+            <div class="self-center block cursor-pointer lg:hidden hamburger">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+            </div>
+
+
+
+        </nav>
+
+        <!-- mobile menu -->
+        <div class="fixed top-0 right-0 z-50 block w-full h-full bg-white lg:hidden navbar">
+            <div class="absolute cursor-pointer right-10 top-10 close ">
+                <i class="fas fa-times fa-3x"></i>
+            </div>
+            <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl font-medium text-blue7">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="#">Članstvo <i class="fas fa-chevron-up"></i></a></li>
+                <li><a href="#">Zastupništvo</a></li>
+                <li><a href="#">Covid 19</a></li>
+                <li><a href="#">Aktuelnosti</a></li>
+                <li><a href="#" class="text-black underline">Mne</a></li>
+                <li><a href="#" class="text-black">Eng</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section id="about_us" class="about__cover h-[170px] xl:h-[363px]">
+        <div class="font-bold xl:text-[80px] xl:leading-[120px] text-white text-[35px] xl:max-w-[1305px] max-w-[378px] lg:max-w-[900px] md:max-w-[700px]  md:mx-auto mr-auto ml-[27px] pt-[66px] ">
+            <h1 class="about_us_heading">O nama</h1>
+        </div>
+    </section>
+
+    <section id="members" class="relative z-30 xl:pb-[164px] xl:pt-[242px]">
+        <div class="max-w-[378px] xl:max-w-[1305px] mr-auto ml-[27px] md:mx-auto ">
+            <h2 class="main-section__heading  mt-[69px] mb-[36px] block xl:hidden animate-slide_left">Zašto su naši članovi <span class="!text-blue6">odabrali nas?</span>
+            </h2>
+            <h2 class="main-section__heading xl:block hidden xl:text-[50px] members2 animate-slide_left">Par riječi <span class="text-blue6">o nama</span></h2>
+            <p class="global_styling__paragraphs xl:text-[18px] xl:leading-[35px] xl:mt-[64px] animate-slide_left">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Naši članovi su preduzetnici, mala i srednja preduzeća, veliki privredni sistemi i udruženja.Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu redni sistemi i udruženja.</p>
+        </div>
+
+           <div class="absolute top-[3%] xl:left-[34%]">
+            <img src="./assets//images/path-president-1.png" alt="path"  loading="lazy" class="opacity-25 h-72 xl:h-full" >
+           </div>
+
+           <div class="absolute top-[3%] left-[25%] xl:left-auto xl:right-[20%]">
+            <img src="./assets//images/path-president-2.png" alt="path" loading="lazy" class="opacity-25 h-72 xl:h-full" >
+           </div>
+           <div class="absolute top-[3%] right-[5%] xl:right-0">
+            <img src="./assets//images/path-president3.png" alt="path" loading="lazy" class="opacity-25 h-44 xl:h-full" >
+           </div>
+
+           <div class="md:flex  md:items-center md:flex-col xl:max-w-[1305px] xl:items-start xl:mx-auto ">
+               <div class="mt-[33px] md:flex md:items-center  xl:gap-x-[127px]">
+                    <div class="md:w-[300px] md:self-center md:order-2 lg:w-[651px] xl:ml-[157px]"><img data-aos="fade-left" src="./assets/images/members.png" alt="image of people" loading="lazy" class="h-[185px]  w-full object-cover lg:h-[505px]"></div>
+                   <div class="ml-[27px] mt-[52px] max-w-[355px] mr-auto md:mx-0 md:self-center md:order-1" data-aos="fade-right">
+                    <h2 class="communication_heading">Naša misija</h2>
+                    <p class="global_styling__paragraphs mt-[35px] text-[14px] lg:text-[18px] lg:leading-[35px] 2xl:w-[514px]">Unija poslodavaca zastupa interese poslodavaca, unapređuje uslove poslovanja, promoviše preduzetništvo i odgovornu
+                    poslovnu praksu, u cilju stvaranja jake privrede i uspješne Crne Gore.</p>
+                
+                   </div>
+                </div>
+
+                <div class="mt-[33px] xl:mt-0 md:flex md:items-center xl:gap-x-[50px]">
+                    <div class="md:w-[300px] md:self-center lg:w-[651px] lg:h-[505px] xl:gap-x-[127px] "><img data-aos="fade-right" src="./assets/images/about_us__cover.png" alt="image of people" loading="lazy" class="object-cover w-full h-[185px] lg:h-[505px] "></div>
+                    <div class="ml-[27px] mt-[52px] max-w-[355px] mr-auto md:self-center md:mx-0" data-aos="fade-left">
+                     <h2 class="communication_heading">Naša vizija</h2>
+                     <p class="global_styling__paragraphs mt-[35px] lg:text-[18px] lg:leading-[35px] 2xl:w-[510px]">
+                        “Poslovni ambijent u kome će svi gradovi Crne Gore stalno imati mogućnost za stalna i stabilna zaposlenja”.
+                     </p>
+                    </div>
+                 </div>
+           </div>
+    </section>
+
+
+
+    <section id="our_valuables" class="bg-blue pt-[77px] pb-[84px] 2xl:py-0">
+        <h2 class="text-center main-section__heading text-white pb-[49px] 2xl:text-justify 2xl:ml-[16vw] xl:text-[50px] 2xl:hidden block" data-aos="fade-down">Naše <span class="text-[#94C4F9]">vrijednosti</span></h2>
+        <div class="grid gap-[21px] sm:place-items-center md:grid-cols-2 2xl:hidden">
+            <div class="max-w-[378px] mx-[25px] bg-blue__card py-[32px] pl-[18px]" data-aos="fade-right">
+                <h3 class="card__heading">01</h3>
+                <h4 class="card__subheading">Nezavisnost</h4>
+                <p class="card__desc">“Poslovni ambijent u kome će svi građani Crne Gore imati mogućnost za stalno i stabilno
+                    zaposlenje.”</p>
+            </div>
+            <div class="max-w-[378px] mx-[25px] bg-blue__card py-[32px] pl-[18px]" data-aos="fade-left">
+                <h3 class="card__heading">02</h3>
+                <h4 class="card__subheading">Transparentnost</h4>
+                <p class="card__desc">“Poslovni ambijent u kome će svi građani Crne Gore imati mogućnost za stalno i stabilno
+                    zaposlenje.”</p>
+            </div>
+            <div class="max-w-[378px] mx-[25px] bg-blue__card py-[32px] pl-[18px]" data-aos="fade-right">
+                <h3 class="card__heading">03</h3>
+                <h4 class="card__subheading">Ravnopravan tretman članova</h4>
+                <p class="card__desc">“Poslovni ambijent u kome će svi građani Crne Gore imati mogućnost za stalno i stabilno
+                    zaposlenje.”</p>
+            </div>
+            <div class="max-w-[378px] mx-[25px] bg-blue__card py-[32px] pl-[18px]" data-aos="fade-left">
+                <h3 class="card__heading">04</h3>
+                <h4 class="card__subheading">Društvena odgovornost</h4>
+                <p class="card__desc">“Poslovni ambijent u kome će svi građani Crne Gore imati mogućnost za stalno i stabilno
+                    zaposlenje.”</p>
+            </div>
+        </div>
+
+        <div class="hidden 2xl:flex">
+            <div class="max-w-[1071px] flex flex-col w-full items-center self-center">
+                <h2 class="main-section__heading text-white mb-[81px] ml-0" data-aos="fade-right">Naše <span class="underline text-blue6">vrijednosti</span></h2>
+                <div class="ml-[20%] accordion">
+                    <div class="accordion_item">
+                        <div class="flex items-center  space-x-[17px]">
+                            <h2 class="accordion__heading">01</h2>
+                            <h3 class="accordion__heading !text-blue__card2">Nezavisnost</h3>
+                            <i class="fas fa-chevron-up accordion_arrow" ></i>
+                        </div>
+                        <div class="max-w-[624px] accordion__hidden" data-id="1">
+                            <p class="card__desc">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.</p>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="flex items-center space-x-[17px]">
+                            <h2 class="accordion__heading">02</h2>
+                            <h3 class="accordion__heading !text-blue__card2">Transparentnost</h3>
+                            <i class="fas fa-chevron-up accordion_arrow" ></i>
+                        </div>
+                        <div class="max-w-[624px] accordion__hidden" data-id="2">
+                            <p class="card__desc">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.</p>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="flex items-center space-x-[17px]">
+                            <h2 class="accordion__heading">03</h2>
+                            <h3 class="accordion__heading !text-blue__card2">Ravnopravan tretman članova</h3>
+                            <i class="fas fa-chevron-up accordion_arrow"></i>
+                        </div>
+                        <div class="max-w-[624px] accordion__hidden"  data-id="3">
+                            <p class="card__desc">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.</p>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="flex items-center space-x-[17px]">
+                            <h2 class="accordion__heading">04</h2>
+                            <h3 class="accordion__heading !text-blue__card2">Društvena odgovornost</h3>
+                            <i class="fas fa-chevron-up accordion_arrow" ></i>
+                        </div>
+                        <div class="max-w-[624px] accordion__hidden" data-id="4">
+                            <p class="card__desc">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.</p>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="flex items-center space-x-[17px]">
+                            <h2 class="accordion__heading">05</h2>
+                            <h3 class="accordion__heading !text-blue__card2">Etičko, profesionalno i legalno poslovanje</h3>
+                            <i class="fas fa-chevron-up accordion_arrow" ></i>
+                        </div>
+                        <div class="max-w-[624px] accordion__hidden" data-id="5">
+                            <p class="card__desc">Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.</p>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+            <div class="" >
+                <img data-aos="fade-in" src="./assets//images/valueables.png" class="h-full transition-all ease-in-out" alt="people image" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="members" class="pt-[124px]">
+        
+            <h2 class="main-section__heading pl-[25px] xl:text-[50px] mb-[36px] sm:text-center 2xl:hidden block" data-aos="fade-right">
+                Zašto su naši članovi <span class="text-blue__card2">odabrali nas?</span>
+            </h2>
+            <h2 class="main-section__heading 2xl:block hidden ml-[16.5vw]" data-aos="fade-right">Tri prioriteta <span class="text-blue6">naše organizacije</span></h2>
+            <div class="xl:flex xl:items-center xl:justify-center">
+                <div class="max-w-[378px]  2xl:ml-[20%] xl:max-w-[1305px] xl:mx-auto grid gap-[27px] xl:gap-x-0 2xl:gap-y-[60px] mx-[25px] xl:grid-cols-1 sm:place-items-center md:items-center sm:grid-cols-2 sm:max-w-full">
+                   <div class=" pb-[30px] xl:bg-blue__custom  2xl:w-[711px] pt-[39px]" data-aos='fade-in' data-aos-delay="200">
+                        <div class="ml-[18px] 2xl:ml-[56px]">
+                            <h2 class="communication_heading">Preciznost</h2>
+                            <p class="global_styling__paragraphs h-full text-[18px] mt-[27px]">
+                                Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                                Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                            </p>
+                        </div>
+                   </div>
+                <div class=" pb-[30px]  pt-[39px] xl:bg-blue__custom  2xl:w-[711px]" data-aos='fade-in' data-aos-delay="400">
+                    <div class="ml-[18px] 2xl:ml-[56px]">
+                        <h2 class="communication_heading">Energičnost</h2>
+                        <p class="global_styling__paragraphs h-full text-[18px] mt-[27px]">
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                        </p>
+                    </div>
+                </div>
+                <div class=" pb-[30px]  pt-[39px] xl:bg-blue__custom  2xl:w-[711px]" data-aos='fade-in' data-aos-delay="600">
+                    <div class="ml-[18px] 2xl:ml-[56px]">
+                        <h2 class="communication_heading">Energičnost</h2>
+                        <p class="global_styling__paragraphs h-full text-[18px] mt-[27px]">
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                            Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu.
+                        </p>
+                    </div>
+                </div>
+                </div>
+
+            <img class="hidden 2xl:block" alt="shuttershock big" loading="k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO" src="./assets/images/shutterstock_1297318555 1.png" alt="">
+            <img class="block 2xl:hidden sm:mx-auto xl:w-full xl:self-end" src="./assets/images/small_shuttershock.png" alt="shuttershock small" loading="lazy">
+            </div>
+    </section>
+
+    <section class="hidden xl:block bg-blue__custom5 xl:py-[215px]">
+        <div class="flex items-center justify-between max-w-[1305px] mx-auto">
+            <div>
+                <h2 class="main-section__heading xl:text-[50px] mb-[84px] xl:max-w-[550px]" data-aos="fade-right">Naša organizacija je
+                    <span class="underline text-blue6">ponosni član ILO</span></h2>
+                   <div class="font-medium text-[19px] leading-[32px] text-black__custom max-w-[504px] space-y-10" data-aos="fade-right">
+                    <p>
+                        Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Naši članovi su preduzetnici, mala i srednja preduzeća, veliki privredni sistemi i udruženja
+
+                    </p>
+                    <p>
+                        Unapređujemo uslove poslovanja, promovišemo preduzetništvo i odgovornu poslovnu praksu. Naši članovi su preduzetnici, mala i srednja preduzeća, veliki privredni sistemi i udruženja
+
+                    </p>
+                   </div>
+            </div>
+            <div >
+                <img src="./assets/images/BUSINESSEUROPE_Logo 1.png" alt="business europe" loading="lazy" data-aos='fade-in' data-aos-delay="100">
+                <img src="./assets/images/IOE - logo 1 1.png" alt="IOE logo" loading="lazy" data-aos='fade-in' data-aos-delay="200">
+                <div class="flex" data-aos='fade-in' data-aos-delay="300">
+                    <img src="./assets/images/ilo.png" alt="ilo logo" loading="lazy">
+                    <img src="./assets/images/JCC - logo 2.png" loading="lazy" alt="jcc logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="xl:flex xl:w-full">
+        <section id="about__us" class="bg-blue__card2 xl:w-1/2 xl:order-last ">
+            <div class="flex max-w-[370px] sm:max-w-[550px] lg:max-w-[900px] md:max-w-[700px] sm:mx-auto xl:w-full xl:justify-center ml-[31px] mr-auto xl:h-[129px] h-[92px] items-center"
+            data-aos="fade-right">
+                <p class="text-[25px] xl:text-[35px] xl:leading-[52.5px] leading-[37.5px] font-bold text-white">O nama
+                </p>
+                <img class="ml-5 xl:ml-12 " src="./assets/images/arrow_white.png" alt="">
+            </div>
+        </section>
+    
+        <section class=" bg-blue7 xl:w-1/2">
+            <div class="max-w-[370px] lg:max-w-[900px] xl:w-full xl:justify-center sm:max-w-[550px] sm:mx-auto ml-[27px] xl:h-[129px]
+                    mr-auto md:max-w-[700px] h-[92px] flex items-center" data-aos="fade-up-right">
+                <p class="!m-0 xl:text-[35px] xl:leading-[52.5px] font-bold  succession_subheading !text-white">
+                    Kontaktirajte nas!</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="footer__section" class="footer__bg">
+        <div
+            class="pt-[52px] pb-[96px] lg:max-w-[900px] sm:max-w-[550px] sm:mx-auto max-w-[370px] ml-[25px] mr-auto md:max-w-[700px] md:flex md:justify-between xl:max-w-full xl:justify-center xl:gap-[247px]  xl:h-[417px] xl:pt-[97px] xl:pb-[81px]">
+            <div class="">
+                <h2 class="text-white text-xl leading-[30px] font-bold mb-[30px] xl:text-[25px] xl:leading-[37.5px]">
+                    Godišnji izvještaj</h2>
+                <ul class="space-y-[23px] xl:space-y-[30px]">
+                    <li>Mjesečni izvještaj</li>
+                    <li>Kvartalni izvještaj</li>
+                    <li>Kvartalni izvještaj</li>
+                </ul>
+            </div>
+    
+            <div class="mt-[75px] md:mt-0">
+                <h2 class="text-white text-xl leading-[30px] font-bold mb-[30px] xl:text-[25px] xl:leading-[37.5px]">
+                    Unija poslodavaca Crne Gore</h2>
+                <ul class="space-y-[11px]">
+                    <li>ul. Cetinjski put br. 36 (Zgrada Milić)</li>
+                    <li>81000 Podgorica</li>
+                    <li>Crna Gora</li>
+                    <li>Tel: + 382 (0)20 209 250</li>
+                    <li>Email: office@poslodavci.org </li>
+                </ul>
+            </div>
+    
+            <div class="items-center hidden xl:flex xl:flex-col">
+                <img src="./assets/images/footer_logo.png" alt="logo" class="w-[88px] h-[74px] " loading="lazy">
+                <p class="font-medium text-[14px] leading-[21px] w-[201px] text-center mt-[31px] text-blue__custom4">
+                    Ovaj projekat
+                    je
+                    sproveden
+                    uz podšku ILO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- <script src="./js/app.js"></script> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+</body>
+</html>
